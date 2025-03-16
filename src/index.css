@@ -1,0 +1,306 @@
+@import "tailwindcss";
+@theme{
+  --color-modal: rgba(0, 0, 0, 0.37);
+  --width-over:95%;
+  --color-deepNavyBlue:#0A2342;
+  --color-golden:#FFC72C;
+  --color-burgundyRed:#9B1C31;
+  --color-latte-gray:#D9D9D9;
+  --shadow-box: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+}
+@layer components{
+  *{
+    @apply
+    scroll-smooth
+    ;
+  }
+}
+body{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+}
+@layer components{
+nav{
+    @apply
+    w-full
+    flex
+    flex-row
+    items-center
+    justify-between
+    text-white
+    bg-deepNavyBlue
+    lg:p-0
+    p-4
+    font-semibold
+    ;
+  }
+}
+@layer components{
+  nav ul li{
+      @apply
+      hover:bg-modal
+      duration-300
+      box-content
+      p-4
+      ;
+    }
+  }
+@layer components{
+  .menu-nav{
+    @apply
+    lg:w-1/4
+    w-full
+    h-full
+    flex
+    flex-row
+    lg:items-start
+    lg:justify-start
+    items-start
+    text-center
+    lg:text-start
+    justify-center
+    text-white
+    bg-deepNavyBlue
+    p-4
+    fixed
+    origin-left
+    ;
+  }
+}
+@layer components{
+  .menu-ul{
+    @apply
+    flex
+    flex-col
+    gap-y-5
+    ;
+  }
+}
+@layer components{
+  .menu-ul2{
+    @apply
+    lg:flex
+    flex-row
+    gap-5
+    items-center
+    hidden
+    mx-5
+    ;
+  }
+}
+@layer components{
+  .nav-button{
+    @apply
+    rounded-3xl
+    px-5
+    py-1
+    border-2
+    border-golden
+    hover:bg-golden
+    bg-golden
+    duration-300
+    ;
+  }
+}
+@layer components{
+  .home-layout{
+    @apply
+    m-10
+    
+    ;
+  }
+}
+@layer components{
+  .home-layout2 {
+    @apply
+    flex
+    text-center
+    lg:text-start
+    lg:flex-row
+    flex-col-reverse
+    justify-between
+    items-center
+    
+    ;
+  }
+}
+@layer components{
+  .home-button{
+    @apply
+    rounded-3xl
+    px-5
+    border-2
+    border-golden
+    hover:bg-golden
+    lg:bg-transparent
+    bg-golden
+    duration-300
+    lg:text-base
+    text-xs
+    ;
+  }
+}
+@layer components{
+  button{
+    @apply
+    p-2
+    cursor-pointer
+    ;
+  }
+}
+@layer components{
+  .about-section{
+    @apply
+    grid
+    lg:grid-cols-3
+    grid-cols-1
+    items-stretch
+    my-20
+    gap-5
+    ;
+  }
+}
+@layer components{
+  .about-container{
+    @apply
+    p-5
+    shadow-box
+    rounded-lg
+    border
+    border-deepNavyBlue
+    flex
+    flex-col
+    items-center
+    justify-center
+    overflow-hidden
+    ;
+  }
+}
+@layer components{
+  .about-container article{
+    @apply
+    break-words
+    text-center
+    gap-y-2
+    ;
+  }
+}
+@layer components{
+  .journal-section{
+    @apply
+    shadow-box
+    rounded-2xl
+    p-5
+    flex
+    flex-col
+    gap-5
+    my-10
+    ;
+  }
+}
+@layer components{
+  .journal-section article{
+    @apply
+    text-deepNavyBlue
+      items-center
+      justify-center
+      flex
+      flex-col
+      text-center
+    ;
+  }
+}
+@layer components{
+  .journal-section-container{
+    @apply
+    grid
+    lg:grid-cols-4
+    grid-cols-1
+    gap-5
+    items-start
+    justify-start
+    overflow-hidden
+    ;
+  }
+}
+@layer components{
+  .journal-container{
+    @apply
+    bg-latte-gray
+    p-5
+    rounded-xl
+    break-words
+    overflow-hidden
+    flex-row
+    flex
+    items-center
+    justify-between
+    ;
+  }
+}
+@layer components{
+  .board-container{
+    @apply
+    bg-transparent
+    p-0
+    relative
+    inline-block
+    rounded-2xl
+    overflow-hidden
+    ;
+  }
+}
+@layer components{
+  .overlay-box{
+    @apply
+    bg-golden
+    absolute
+   
+    bottom-0
+    w-over
+    lg:h-72
+    h-28
+    rounded-full
+    md:h-52
+    -z-10
+    ;
+  }
+}
+@layer components{
+  .board-section-container{
+    @apply
+    flex
+    justify-center
+    items-start
+    ;
+  }
+}
+@layer components{
+  .board-section{
+    @apply
+    flex
+    items-center
+    
+    ;
+  }
+}
+@layer components{
+  .board-section2{
+    @apply
+    grid
+    lg:grid-cols-2
+    grid-cols-1
+    gap-5
+    ;
+  }
+}
+@layer components{
+  .board-section article{
+    @apply
+    text-deepNavyBlue
+    
+    ;
+  }
+}
